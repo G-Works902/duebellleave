@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Duebell Leave Privacy Policy / プライバシーポリシー</title>
+<style>
+  /* Duebell Fleet の privacy.html と同じ構成。色はアプリの画面（生成り・墨・朱）に揃える */
+  :root { --ink:#2B2A26; --accent:#B8432F; --line:#CFC8B8; --soft:#6B665C; --paper:#F4F1EA; }
+  * { box-sizing: border-box; }
+  body {
+    font-family: "Segoe UI","Meiryo","Yu Gothic UI",system-ui,sans-serif;
+    color: var(--ink); line-height: 1.75; margin: 0;
+    background: var(--paper);
+  }
+  .wrap { max-width: 820px; margin: 0 auto; padding: 32px 22px 64px; }
+  header { border-bottom: 3px solid var(--ink); padding-bottom: 14px; margin-bottom: 8px; }
+  h1 { font-size: 1.7rem; margin: 0 0 4px; }
+  h1 .brand { font-family: "Bahnschrift","Segoe UI",sans-serif; letter-spacing: 1px; }
+  .meta { color: var(--soft); font-size: .9rem; }
+  .summary { background:#FBF9F4; border:1px solid var(--line); border-left:5px solid var(--accent);
+             border-radius:6px; padding:12px 16px; margin:16px 0; font-weight:600; }
+  h2 { color: var(--accent); font-size: 1.25rem; margin: 40px 0 6px; }
+  h3 { font-size: 1.02rem; margin: 22px 0 4px; border-left: 4px solid var(--accent); padding-left: 8px; }
+  p, li { font-size: .98rem; }
+  code { background:#ECE7DC; padding:1px 6px; border-radius:4px; font-family:Consolas,monospace; font-size:.9em; word-break: break-all; }
+  hr { border:none; border-top:1px solid var(--line); margin:36px 0; }
+  .lang-divider { text-align:center; color:var(--soft); font-size:.85rem; letter-spacing:2px; margin:8px 0; }
+  footer { margin-top: 40px; color: var(--soft); font-size:.85rem; text-align:center; }
+  a { color: var(--accent); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1><span class="brand">Duebell Leave</span> &mdash; プライバシーポリシー / Privacy Policy</h1>
+    <div class="meta">最終更新日 / Last updated: 2026-10-29 ・ 発行者 / Publisher: <strong>G-Works</strong></div>
+  </header>
+
+  <!-- ================= 日本語 ================= -->
+  <h2>日本語</h2>
+  <h3>はじめに</h3>
+  <p>Duebell Leave（以下「本アプリ」）は、従業員の年次有給休暇の付与・残日数・失効と年 5 日の取得義務を管理し、年次有給休暇管理簿を出力する Windows 用のデスクトップアプリです。本ポリシーは、本アプリにおける情報の取り扱いを説明します。</p>
+  <div class="summary">本アプリは個人情報を一切収集・送信・共有しません。入力・取り込みしたデータはすべて利用者のデバイス（または利用者が指定したフォルダ）内にのみ保存されます。</div>
+
+  <h3>1. 収集する情報</h3>
+  <ul>
+    <li>本アプリは利用者の個人情報を収集しません。</li>
+    <li>利用者が入力または CSV（休暇取得・従業員・出勤率）や Duebell Hours のデータベースから取り込んだ次のデータは、利用者のデバイス内のデータベースファイル（既定は「ドキュメント」フォルダの <code>DuebellLeave\duebell_leave.db</code>、または利用者が指定した共有フォルダなど）にのみ保存されます：
+      <ul>
+        <li>会社名、会社の休日、計画的付与の計画（名称・日付・労使協定）</li>
+        <li>従業員の情報（氏名、カナ、社員番号、部署、入社日、退職日、在籍の状態、基準日方式、備考）と、労働条件の履歴（週所定労働日数・時間、年間所定労働日数、1 日の所定労働時間）</li>
+        <li>出勤率の算定（全労働日・出勤日・みなし出勤日）と休業の期間・種類（育児・介護・産前産後・業務上の傷病など）</li>
+        <li>年次有給休暇の付与（付与日・日数）と取得（取得日・日数または時間・種別・予定か実績か）の記録</li>
+        <li>統一基準日・休みの曜日・消化順など、利用者が入れた設定</li>
+        <li>自動・手動のバックアップ（データベースと同じ場所の <code>backup</code> フォルダ）</li>
+      </ul>
+    </li>
+    <li>取り込みに使った CSV ファイルと Duebell Hours のデータベースは読み取るだけで、本アプリが書き換えたり写しを作ったりすることはありません。</li>
+    <li>次回起動時に同じ状態で開く目的で、同意した免責事項の版・列の幅・開いていたデータベースの場所・バックアップの控えの保存先が、本アプリの設定ファイル（<code>duebell_leave.ini</code>。Microsoft Store 版ではアプリ専用の領域）に保存されます。</li>
+    <li>共有フォルダで使う場合、同時編集を防ぐためのロックファイル（<code>duebell_leave.lock</code>）に、編集中の PC 名・Windows のユーザー名・時刻が書かれます。これは同じフォルダを使う利用者に「誰が編集中か」を示すためだけに使われます。</li>
+    <li>これらのファイルが外部へ送信されることはなく、開発者がアクセスすることもできません。</li>
+  </ul>
+
+  <h3>2. 利用目的</h3>
+  <p>上記のデータは、本アプリの機能（年休の付与・残日数・失効と 5 日取得義務の管理、管理簿・残日数のお知らせ・一覧の出力、表示・設定の復元、共有フォルダでのロック）を提供するためだけに使われます。それ以外の目的には使われません。</p>
+  <p>従業員の氏名や休暇・休業の記録は、利用者（会社）が自らの労務管理のために扱う情報です。その取り扱いは利用者の社内規程と個人情報保護法などの法令に従ってください。</p>
+
+  <h3>3. ネットワーク・オンラインサービス</h3>
+  <p>本アプリはインターネットに接続せずに動作します。テレメトリ・利用解析（アナリティクス）・広告・トラッキング・ユーザーアカウントの仕組みを一切含みません。勤怠クラウドや役所とのデータ連携・電子申請も行いません（勤怠クラウドのデータは、利用者が書き出した CSV ファイルを読むだけです）。</p>
+  <p>Microsoft Store 版では、試用期間とライセンスの確認、および購入を Windows と Microsoft Store の仕組みを通じて行います。これに伴う情報の取り扱いは <a href="https://privacy.microsoft.com/privacystatement">Microsoft のプライバシーに関する声明</a>に従います。</p>
+
+  <h3>4. 第三者への提供</h3>
+  <p>本アプリはデータを収集しないため、いかなるデータも第三者へ販売・提供・開示しません。</p>
+
+  <h3>5. 書き出し機能について</h3>
+  <p>CSV・印刷用 HTML（年次有給休暇管理簿・残日数のお知らせ・時季指定が必要な人の一覧）への書き出しは、利用者が明示的に操作したときにのみ実行され、書き出し先は利用者が指定した場所（印刷用 HTML は一時フォルダ）です。本アプリが自動で送信することはありません。</p>
+
+  <h3>6. データの保存期間と削除</h3>
+  <p>データは、利用者が削除するまで保存されます。本アプリが年休の記録を自動で削除することはありません（年次有給休暇管理簿の保存期間は法令に従って利用者が管理してください。保存期間中の退職者は本アプリでは削除できません）。本アプリをアンインストールしても、業務データを失わないようデータベースとバックアップ（「ドキュメント」フォルダの <code>DuebellLeave</code>）は残ります。不要になったら利用者がフォルダごと削除してください。設定ファイルはアンインストール時に削除されます。</p>
+
+  <h3>7. セキュリティ</h3>
+  <p>データは利用者のデバイスまたは利用者が指定したフォルダにのみ保存されるため、その安全性は利用者のデバイス・ネットワークのセキュリティ対策に依存します。共有フォルダに置く場合は、アクセスできる人を労務の担当者に限ってください。</p>
+
+  <h3>8. 子どものプライバシー</h3>
+  <p>本アプリは、子どもを含むいかなる利用者からも情報を収集しません。</p>
+
+  <h3>9. 本ポリシーの変更</h3>
+  <p>本ポリシーは必要に応じて改定することがあります。最新版はこのページに掲載します。</p>
+
+  <h3>10. お問い合わせ</h3>
+  <p>本ポリシーや本アプリに関するお問い合わせ先：<a href="mailto:G.Works.902@gmail.com">G.Works.902@gmail.com</a></p>
+
+  <hr>
+  <div class="lang-divider">— ENGLISH —</div>
+
+  <!-- ================= English ================= -->
+  <h2>English</h2>
+  <h3>Introduction</h3>
+  <p>Duebell Leave ("the App") is a Windows desktop application that keeps track of employees' annual paid leave in Japan (grants, balances, expiry and the 5-day obligation) and prints the legally required paid leave ledger. This policy explains how the App handles information.</p>
+  <div class="summary">The App does not collect, transmit, or share any personal data. Everything you enter or import is stored only on your device (or in a folder you choose).</div>
+
+  <h3>1. Information we collect</h3>
+  <ul>
+    <li>The App does not collect any personal information.</li>
+    <li>The data you enter or import from CSV files (leave taken, employees, attendance) or from a Duebell Hours database is stored in a database file on your device (by default <code>DuebellLeave\duebell_leave.db</code> in your Documents folder, or another location you choose, such as a shared folder):
+      <ul>
+        <li>Company name, company holidays and planned leave (name, dates, labour agreement)</li>
+        <li>Employees (name, kana, employee number, department, hire and leaving dates, status, grant date method, notes) and their working conditions over time (scheduled days and hours)</li>
+        <li>Attendance rates (working days, days attended, days deemed attended) and periods of absence (childcare, family care, maternity, work injury and others)</li>
+        <li>Annual paid leave granted (date, days) and taken (date, days or hours, kind, planned or actual)</li>
+        <li>Your settings, such as the common grant date, weekly days off and the order of use</li>
+        <li>Automatic and manual backups (a <code>backup</code> folder next to the database)</li>
+      </ul>
+    </li>
+    <li>CSV files and Duebell Hours databases are only read; the App neither changes nor copies them.</li>
+    <li>To open the App the way you left it, the version of the accepted disclaimer, column widths, the database location and the second backup folder are stored in the App's settings file (<code>duebell_leave.ini</code>; in the Microsoft Store version, in the App's own storage).</li>
+    <li>When the database is in a shared folder, a lock file (<code>duebell_leave.lock</code>) records the editing PC's name, the Windows user name and the time, to prevent simultaneous editing. It is used only to show other users of the same folder who is editing.</li>
+    <li>These files never leave your device, and the developer cannot access them.</li>
+  </ul>
+
+  <h3>2. How we use information</h3>
+  <p>The data is used only to provide the App's functionality (managing paid leave grants, balances, expiry and the 5-day obligation, printing the ledger, the balance notices and lists, restoring the display and settings, and locking a shared database). It is not used for any other purpose.</p>
+  <p>Employee names and leave and absence records are information that you, the company, handle for your own labour management; handle them according to your internal rules and the applicable data protection laws.</p>
+
+  <h3>3. Network and online services</h3>
+  <p>The App works without an internet connection. It contains no telemetry, analytics, advertising, tracking or user accounts. It exchanges no data with attendance services or the authorities and files nothing.</p>
+  <p>In the Microsoft Store version, the trial period, the licence check and purchases are handled by Windows and the Microsoft Store; the <a href="https://privacy.microsoft.com/privacystatement">Microsoft Privacy Statement</a> applies.</p>
+
+  <h3>4. Sharing with third parties</h3>
+  <p>Because the App does not collect data, it does not sell, share or disclose any data to third parties.</p>
+
+  <h3>5. Export features</h3>
+  <p>Export to CSV and printable HTML (the paid leave ledger, the balance notices and the list of people who need designated days) runs only when you ask for it, and writes to the location you choose (printable HTML goes to the temporary folder). The App never transmits anything.</p>
+
+  <h3>6. Retention and deletion</h3>
+  <p>Data is kept until you delete it; the App never deletes leave records automatically (keep the paid leave ledger for the period the law requires; the App does not delete a former employee within that period). Uninstalling the App leaves the database and backups (the <code>DuebellLeave</code> folder in Documents) in place so that business data is not lost; delete the folder when you no longer need it. The settings file is removed with the App.</p>
+
+  <h3>7. Security</h3>
+  <p>Data is stored only on your device or in a folder you choose, so its security depends on the security measures of your device and network. If you use a shared folder, limit access to the staff in charge of labour management.</p>
+
+  <h3>8. Children's privacy</h3>
+  <p>The App does not collect information from anyone, including children.</p>
+
+  <h3>9. Changes to this policy</h3>
+  <p>This policy may be updated as needed. The latest version is always published on this page.</p>
+
+  <h3>10. Contact</h3>
+  <p>Questions about this policy or the App: <a href="mailto:G.Works.902@gmail.com">G.Works.902@gmail.com</a></p>
+
+  <footer>&copy; 2026 G-Works &nbsp;&middot;&nbsp; Duebell Leave</footer>
+</div>
+</body>
+</html>
