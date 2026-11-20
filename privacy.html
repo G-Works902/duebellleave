@@ -34,7 +34,7 @@
 <div class="wrap">
   <header>
     <h1><span class="brand">Duebell Leave</span> &mdash; プライバシーポリシー / Privacy Policy</h1>
-    <div class="meta">最終更新日 / Last updated: 2026-10-29 ・ 発行者 / Publisher: <strong>G-Works</strong></div>
+    <div class="meta">最終更新日 / Last updated: 2026-11-20 ・ 発行者 / Publisher: <strong>G-Works</strong></div>
   </header>
 
   <!-- ================= 日本語 ================= -->
@@ -52,6 +52,7 @@
         <li>従業員の情報（氏名、カナ、社員番号、部署、入社日、退職日、在籍の状態、基準日方式、備考）と、労働条件の履歴（週所定労働日数・時間、年間所定労働日数、1 日の所定労働時間）</li>
         <li>出勤率の算定（全労働日・出勤日・みなし出勤日）と休業の期間・種類（育児・介護・産前産後・業務上の傷病など）</li>
         <li>年次有給休暇の付与（付与日・日数）と取得（取得日・日数または時間・種別・予定か実績か）の記録</li>
+        <li>時季指定の記録（指定した日・通知した日・意見を聴いた日・本人の意見・メモ）</li>
         <li>統一基準日・休みの曜日・消化順など、利用者が入れた設定</li>
         <li>自動・手動のバックアップ（データベースと同じ場所の <code>backup</code> フォルダ）</li>
       </ul>
@@ -69,12 +70,13 @@
   <h3>3. ネットワーク・オンラインサービス</h3>
   <p>本アプリはインターネットに接続せずに動作します。テレメトリ・利用解析（アナリティクス）・広告・トラッキング・ユーザーアカウントの仕組みを一切含みません。勤怠クラウドや役所とのデータ連携・電子申請も行いません（勤怠クラウドのデータは、利用者が書き出した CSV ファイルを読むだけです）。</p>
   <p>Microsoft Store 版では、試用期間とライセンスの確認、および購入を Windows と Microsoft Store の仕組みを通じて行います。これに伴う情報の取り扱いは <a href="https://privacy.microsoft.com/privacystatement">Microsoft のプライバシーに関する声明</a>に従います。</p>
+  <p>［ヘルプ］＞［Duebell シリーズのアプリ］から姉妹アプリを選んだときは、そのアプリの Microsoft Store のページを Microsoft Store アプリ（開けないときは既定のブラウザー）で開きます。ページのアドレスには、本アプリから開いたことを示す目印（<code>cid=leaveapp</code>）が付き、開発者は Microsoft の集計でその回数だけを知ることができます（個人を特定する情報は含まれません）。［ヘルプ］＞［G-Works のサイト（シリーズのアプリの一覧）］を選んだときは、開発者の製品サイト（<code>https://gworks-site.g-works-902.workers.dev/</code>）を既定のブラウザーで開きます。どちらも利用者が選んだときだけ開き、本アプリからそのページへ情報を送ることはありません。</p>
 
   <h3>4. 第三者への提供</h3>
   <p>本アプリはデータを収集しないため、いかなるデータも第三者へ販売・提供・開示しません。</p>
 
   <h3>5. 書き出し機能について</h3>
-  <p>CSV・印刷用 HTML（年次有給休暇管理簿・残日数のお知らせ・時季指定が必要な人の一覧）への書き出しは、利用者が明示的に操作したときにのみ実行され、書き出し先は利用者が指定した場所（印刷用 HTML は一時フォルダ）です。本アプリが自動で送信することはありません。</p>
+  <p>CSV・印刷用 HTML（年次有給休暇管理簿・残日数のお知らせ・時季指定が必要な人の一覧・時季指定の通知書）への書き出しは、利用者が明示的に操作したときにのみ実行され、書き出し先は利用者が指定した場所（印刷用 HTML は一時フォルダ）です。本アプリが自動で送信することはありません。</p>
 
   <h3>6. データの保存期間と削除</h3>
   <p>データは、利用者が削除するまで保存されます。本アプリが年休の記録を自動で削除することはありません（年次有給休暇管理簿の保存期間は法令に従って利用者が管理してください。保存期間中の退職者は本アプリでは削除できません）。本アプリをアンインストールしても、業務データを失わないようデータベースとバックアップ（「ドキュメント」フォルダの <code>DuebellLeave</code>）は残ります。不要になったら利用者がフォルダごと削除してください。設定ファイルはアンインストール時に削除されます。</p>
@@ -109,6 +111,7 @@
         <li>Employees (name, kana, employee number, department, hire and leaving dates, status, grant date method, notes) and their working conditions over time (scheduled days and hours)</li>
         <li>Attendance rates (working days, days attended, days deemed attended) and periods of absence (childcare, family care, maternity, work injury and others)</li>
         <li>Annual paid leave granted (date, days) and taken (date, days or hours, kind, planned or actual)</li>
+        <li>Designations of days (the days, when the person was told, when their opinion was heard, the opinion and a note)</li>
         <li>Your settings, such as the common grant date, weekly days off and the order of use</li>
         <li>Automatic and manual backups (a <code>backup</code> folder next to the database)</li>
       </ul>
@@ -126,12 +129,13 @@
   <h3>3. Network and online services</h3>
   <p>The App works without an internet connection. It contains no telemetry, analytics, advertising, tracking or user accounts. It exchanges no data with attendance services or the authorities and files nothing.</p>
   <p>In the Microsoft Store version, the trial period, the licence check and purchases are handled by Windows and the Microsoft Store; the <a href="https://privacy.microsoft.com/privacystatement">Microsoft Privacy Statement</a> applies.</p>
+  <p>When you choose one of our other apps under [Help] &gt; [Duebell series apps], the App opens its Microsoft Store page in the Microsoft Store app (or in your default browser if the Store app cannot be opened). The page address carries a tag showing that it was opened from the App (<code>cid=leaveapp</code>), so the developer can see in Microsoft's statistics how many times this happened, and nothing that identifies you. When you choose [Help] &gt; [G-Works website], the App opens the developer's product website (<code>https://gworks-site.g-works-902.workers.dev/</code>) in your default browser. Both open only when you choose them, and the App sends no information to these pages.</p>
 
   <h3>4. Sharing with third parties</h3>
   <p>Because the App does not collect data, it does not sell, share or disclose any data to third parties.</p>
 
   <h3>5. Export features</h3>
-  <p>Export to CSV and printable HTML (the paid leave ledger, the balance notices and the list of people who need designated days) runs only when you ask for it, and writes to the location you choose (printable HTML goes to the temporary folder). The App never transmits anything.</p>
+  <p>Export to CSV and printable HTML (the paid leave ledger, the balance notices, the list of people who need designated days and the notices of designated days) runs only when you ask for it, and writes to the location you choose (printable HTML goes to the temporary folder). The App never transmits anything.</p>
 
   <h3>6. Retention and deletion</h3>
   <p>Data is kept until you delete it; the App never deletes leave records automatically (keep the paid leave ledger for the period the law requires; the App does not delete a former employee within that period). Uninstalling the App leaves the database and backups (the <code>DuebellLeave</code> folder in Documents) in place so that business data is not lost; delete the folder when you no longer need it. The settings file is removed with the App.</p>
